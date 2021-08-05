@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E023F5F426BBE64300D7D91B /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023F5F326BBE64300D7D91B /* GroupModel.swift */; };
+		E023F5F626BBE6EF00D7D91B /* APIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023F5F526BBE6EF00D7D91B /* APIViewModel.swift */; };
+		E023F5FE26BBEAD300D7D91B /* SpecialtyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023F5FD26BBEAD300D7D91B /* SpecialtyModel.swift */; };
+		E023F60426BBF79100D7D91B /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E023F60326BBF79100D7D91B /* GroupsView.swift */; };
 		E09663AD26B9B77A00146458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09663AC26B9B77A00146458 /* AppDelegate.swift */; };
 		E09663AF26B9B77A00146458 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09663AE26B9B77A00146458 /* SceneDelegate.swift */; };
 		E09663B126B9B77A00146458 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09663B026B9B77A00146458 /* ContentView.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E023F5F326BBE64300D7D91B /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		E023F5F526BBE6EF00D7D91B /* APIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIViewModel.swift; sourceTree = "<group>"; };
+		E023F5FD26BBEAD300D7D91B /* SpecialtyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialtyModel.swift; sourceTree = "<group>"; };
+		E023F60326BBF79100D7D91B /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		E09663A926B9B77A00146458 /* Specialties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specialties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09663AC26B9B77A00146458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E09663AE26B9B77A00146458 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E023F5F726BBE70100D7D91B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E09663B026B9B77A00146458 /* ContentView.swift */,
+				E023F60326BBF79100D7D91B /* GroupsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E023F5F826BBE71400D7D91B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E023F5FD26BBEAD300D7D91B /* SpecialtyModel.swift */,
+				E023F5F326BBE64300D7D91B /* GroupModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E023F5F926BBE72100D7D91B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E023F5F526BBE6EF00D7D91B /* APIViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E09663A026B9B77A00146458 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +90,11 @@
 		E09663AB26B9B77A00146458 /* Specialties */ = {
 			isa = PBXGroup;
 			children = (
+				E023F5F726BBE70100D7D91B /* View */,
+				E023F5F826BBE71400D7D91B /* Model */,
+				E023F5F926BBE72100D7D91B /* ViewModel */,
 				E09663AC26B9B77A00146458 /* AppDelegate.swift */,
 				E09663AE26B9B77A00146458 /* SceneDelegate.swift */,
-				E09663B026B9B77A00146458 /* ContentView.swift */,
 				E09663B226B9B77C00146458 /* Assets.xcassets */,
 				E09663B726B9B77C00146458 /* LaunchScreen.storyboard */,
 				E09663BA26B9B77C00146458 /* Info.plist */,
@@ -91,6 +127,8 @@
 			dependencies = (
 			);
 			name = Specialties;
+			packageProductDependencies = (
+			);
 			productName = Specialties;
 			productReference = E09663A926B9B77A00146458 /* Specialties.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +157,8 @@
 				Base,
 			);
 			mainGroup = E09663A026B9B77A00146458;
+			packageReferences = (
+			);
 			productRefGroup = E09663AA26B9B77A00146458 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,7 +188,11 @@
 			files = (
 				E09663AD26B9B77A00146458 /* AppDelegate.swift in Sources */,
 				E09663AF26B9B77A00146458 /* SceneDelegate.swift in Sources */,
+				E023F5FE26BBEAD300D7D91B /* SpecialtyModel.swift in Sources */,
+				E023F5F626BBE6EF00D7D91B /* APIViewModel.swift in Sources */,
 				E09663B126B9B77A00146458 /* ContentView.swift in Sources */,
+				E023F60426BBF79100D7D91B /* GroupsView.swift in Sources */,
+				E023F5F426BBE64300D7D91B /* GroupModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mrmda28.Specialties;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mrmda28.Specialties;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
